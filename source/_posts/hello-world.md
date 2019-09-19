@@ -1,38 +1,53 @@
 ---
-title: Hello World
+title: 第一篇博客
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+这篇博客主要用来记录markdown语法，并对各种markdown文档元素进行预览。
 
-## Quick Start
+# 一级标题：# 文本
 
-### Create a new post
+## 二级标题： ## 文本
+
+### 三级标题：### 文本
+
+#### 四级标题：#### 文本
+
+##### 五级标题：##### 文本
+
+###### 六级标题：###### 文本
+
+正文长我这样，直接写文本就是正文
+
+*想要斜体用一个\*号括起来*
+
+**想要粗体用两个\*号括起来**
+
+***想要斜体还想要粗体用三个\*号括起来***
+
+~~删除线用两个波浪号包起来~~
+
+>第一级引用内容利用一个\>表示
+>>第二级引用就是两个\>,以此类推
+>>>>>>>>>所以可以这么皮一下
+
+***
+下面是六亲不认的分割线，用三个或者三个以上的-或者*都可以，但是三个-需要和文本隔开一行，我也不知道为什么：
+
+---
 
 ``` bash
-$ hexo new "My New Post"
+This is a piece of code
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
+这是个链接: [baidu](https://baidu.com/)，语法如下：
+```
+[baidu](https://baidu.com/)
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
+图片：
 ```
+![图片alt](图片地址 ''图片title'')
 
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
+图片alt就是显示在图片下面的文字，相当于对图片内容的解释。
+图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加
 ```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+![我是个栗子](图片地址 ''图片title'')
