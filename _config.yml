@@ -4,12 +4,12 @@
 
 # Site
 title: Hiro's Blog
-subtitle:
-description:
-keywords:
+subtitle: 陈冠宏的博客
+description: 求知若渴，虚心若愚
+keywords: Deep Learning
 author: Hiro
 language: zh-CN
-timezone:
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
