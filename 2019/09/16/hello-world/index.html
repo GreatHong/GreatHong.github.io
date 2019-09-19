@@ -30,7 +30,7 @@
     exturl: false,
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
     mediumzoom: false,
@@ -55,18 +55,20 @@
   };
 </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="这篇博客主要用来记录markdown语法，并对各种markdown文档元素进行预览。一级标题：# 文本二级标题： ## 文本三级标题：### 文本四级标题：#### 文本五级标题：##### 文本六级标题：###### 文本正文长我这样，直接写文本就是正文想要斜体用一个*号括起来想要粗体用两个*号括起来想要斜体还想要粗体用三个*号括起来删除线用两个波浪号包起来 第一级引用内容利用一个&amp;gt;表示">
 <meta name="keywords" content="Deep Learning">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
+<meta property="og:title" content="第一篇博客">
 <meta property="og:url" content="http://yoursite.com/2019/09/16/hello-world/index.html">
 <meta property="og:site_name" content="Hiro&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="这篇博客主要用来记录markdown语法，并对各种markdown文档元素进行预览。一级标题：# 文本二级标题： ## 文本三级标题：### 文本四级标题：#### 文本五级标题：##### 文本六级标题：###### 文本正文长我这样，直接写文本就是正文想要斜体用一个*号括起来想要粗体用两个*号括起来想要斜体还想要粗体用三个*号括起来删除线用两个波浪号包起来 第一级引用内容利用一个&amp;gt;表示">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-16T09:31:37.509Z">
+<meta property="og:image" content="https://github.com/GreatHong/GreatHong.github.io/blob/hexo/source/images/example.jpg?raw=true">
+<meta property="og:updated_time" content="2019-09-19T14:02:06.959Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="第一篇博客">
+<meta name="twitter:description" content="这篇博客主要用来记录markdown语法，并对各种markdown文档元素进行预览。一级标题：# 文本二级标题： ## 文本三级标题：### 文本四级标题：#### 文本五级标题：##### 文本六级标题：###### 文本正文长我这样，直接写文本就是正文想要斜体用一个*号括起来想要粗体用两个*号括起来想要斜体还想要粗体用三个*号括起来删除线用两个波浪号包起来 第一级引用内容利用一个&amp;gt;表示">
+<meta name="twitter:image" content="https://github.com/GreatHong/GreatHong.github.io/blob/hexo/source/images/example.jpg?raw=true">
   <link rel="canonical" href="http://yoursite.com/2019/09/16/hello-world/">
 
 
@@ -81,7 +83,7 @@
   };
 </script>
 
-  <title>Hello World | Hiro's Blog</title>
+  <title>第一篇博客 | Hiro's Blog</title>
   
 
 
@@ -289,10 +291,7 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+  <div class="reading-progress-bar"></div>
 
   <a href="https://github.com/GreatHong" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
 
@@ -323,7 +322,7 @@
       <meta itemprop="name" content="Hiro's Blog">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hello World
+        <h1 class="post-title" itemprop="name headline">第一篇博客
 
           
         </h1>
@@ -342,6 +341,18 @@
               <time title="创建时间：2019-09-16 17:31:37" itemprop="dateCreated datePublished" datetime="2019-09-16T17:31:37+08:00">2019-09-16</time>
             </span>
           
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-19 22:02:06" itemprop="dateModified" datetime="2019-09-19T22:02:06+08:00">2019-09-19</time>
+              </span>
+            
+          
 
           
 
@@ -354,19 +365,95 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p>这篇博客主要用来记录markdown语法，并对各种markdown文档元素进行预览。</p><h1 id="一级标题：-文本"><a href="#一级标题：-文本" class="headerlink" title="一级标题：# 文本"></a>一级标题：# 文本</h1><h2 id="二级标题：-文本"><a href="#二级标题：-文本" class="headerlink" title="二级标题： ## 文本"></a>二级标题： ## 文本</h2><h3 id="三级标题：-文本"><a href="#三级标题：-文本" class="headerlink" title="三级标题：### 文本"></a>三级标题：### 文本</h3><h4 id="四级标题：-文本"><a href="#四级标题：-文本" class="headerlink" title="四级标题：#### 文本"></a>四级标题：#### 文本</h4><h5 id="五级标题：-文本"><a href="#五级标题：-文本" class="headerlink" title="五级标题：##### 文本"></a>五级标题：##### 文本</h5><h6 id="六级标题：-文本"><a href="#六级标题：-文本" class="headerlink" title="六级标题：###### 文本"></a>六级标题：###### 文本</h6><p>正文长我这样，直接写文本就是正文</p><p><em>想要斜体用一个*号括起来</em></p><p><strong>想要粗体用两个*号括起来</strong></p><p><strong><em>想要斜体还想要粗体用三个*号括起来</em></strong></p><p><del>删除线用两个波浪号包起来</del></p><blockquote>
+<p>第一级引用内容利用一个&gt;表示</p>
+<blockquote>
+<p>第二级引用就是两个&gt;,以此类推</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>所以可以这么皮一下</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote><hr><p>下面是六亲不认的分割线，用三个或者三个以上的-或者*都可以，但是三个-需要和文本隔开一行，我也不知道为什么：</p><hr><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">This is a piece of code</span><br><span class="line">代码块要用连续的三个\`包起来，还可以指定代码的语言</span><br></pre></td></tr></table></figure><a id="more"></a>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+
+
+
+
+
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>这是个html容器<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这是个链接: <a href="https://baidu.com/" target="_blank" rel="noopener">baidu</a>，语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[baidu](https://baidu.com/)</span><br></pre></td></tr></table></figure>
+
+<p>图片：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 &apos;&apos;图片title&apos;&apos;)</span><br><span class="line"></span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://github.com/GreatHong/GreatHong.github.io/blob/hexo/source/images/example.jpg?raw=true" alt="我举个栗子" title="举个栗子"></p>
+<p>无序的列表可以用-+*任意一个作为开头，和内容之间要有空格：</p>
+<ul>
+<li>第一个</li>
+</ul>
+<ul>
+<li>第二个</li>
+</ul>
+<ul>
+<li>第三个</li>
+</ul>
+<p>有序列表要用数字加.，也要用空格分开，虽然有些显示上没有区别，仔细看是会有自动的缩进：</p>
+<ol>
+<li>第一个</li>
+<li>第二个<ul>
+<li>第二级</li>
+</ul>
+</li>
+<li>第三个</li>
+</ol>
+<p>嵌套的列表上级和下级之间用三个空格隔开</p>
+<p>表格的不同列用|分割，表头用-和表分开：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">姓名|技能|排行</span><br><span class="line">--|:--:|--:</span><br><span class="line">刘备|哭|大哥</span><br><span class="line">关羽|打|二哥</span><br><span class="line">张飞|骂|三弟</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th align="center">技能</th>
+<th align="right">排行</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>刘备</td>
+<td align="center">哭</td>
+<td align="right">大哥</td>
+</tr>
+<tr>
+<td>关羽</td>
+<td align="center">打</td>
+<td align="right">二哥</td>
+</tr>
+<tr>
+<td>张飞</td>
+<td align="center">骂</td>
+<td align="right">三弟</td>
+</tr>
+</tbody></table>
 
     </div>
 
@@ -440,7 +527,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题：-文本"><span class="nav-number">1.</span> <span class="nav-text">一级标题：# 文本</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题：-文本"><span class="nav-number">1.1.</span> <span class="nav-text">二级标题： ## 文本</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题：-文本"><span class="nav-number">1.1.1.</span> <span class="nav-text">三级标题：### 文本</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题：-文本"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">四级标题：#### 文本</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题：-文本"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">五级标题：##### 文本</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题：-文本"><span class="nav-number">1.1.1.1.1.1.</span> <span class="nav-text">六级标题：###### 文本</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -491,6 +578,11 @@
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+      
 
     </div>
   </aside>
@@ -525,7 +617,7 @@
     <!-- 博客字数统计 -->
     <span class="site-pv">
       <i class="fa fa-pencil"></i>
-      博客全站共： <span class="post-count">73</span> 字
+      博客全站共： <span class="post-count">504</span> 字
     </span>
 </div>
 <!-- 新增访客统计代码 END-->
