@@ -323,7 +323,7 @@ symbols_count_time:
   wpm: 275
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Wechat Subscriber
 wechat_subscriber:
@@ -337,7 +337,7 @@ reward_settings:
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
   enable: true
   animation: false
-  comment: 您的支持会是我最大的动力
+  comment: 您的支持是对我最大的肯定
 
 reward:
   wechatpay: /images/wechatpay.jpg
