@@ -55,18 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="求知若渴，虚心若愚">
-<meta name="keywords" content="Deep Learning">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hiro&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/09/index.html">
+  <meta name="description" content="最近在看机器学习的一些基础，看到数学推导的时候发现自己还是对基础的推到过程不是很了解。这一篇总结记录一下矩阵的求导运算的基础知识供以后自己查询。矩阵的求导（Matrix Derivative）也叫矩阵微分（Matrix Differential），在机器学习的一些基本推导中经常用到。在机器学习领域很多计算都是基于矩阵和向量来进行的，所以学习和矩阵相关的一些数学运算是很有必要的，有利于更好的理解数学">
+<meta name="keywords" content="Neural Network,math">
+<meta property="og:type" content="article">
+<meta property="og:title" content="矩阵求导规则总结">
+<meta property="og:url" content="http://yoursite.com/2019/09/25/Matrix-Calculus/index.html">
 <meta property="og:site_name" content="Hiro&#39;s Blog">
-<meta property="og:description" content="求知若渴，虚心若愚">
+<meta property="og:description" content="最近在看机器学习的一些基础，看到数学推导的时候发现自己还是对基础的推到过程不是很了解。这一篇总结记录一下矩阵的求导运算的基础知识供以后自己查询。矩阵的求导（Matrix Derivative）也叫矩阵微分（Matrix Differential），在机器学习的一些基本推导中经常用到。在机器学习领域很多计算都是基于矩阵和向量来进行的，所以学习和矩阵相关的一些数学运算是很有必要的，有利于更好的理解数学">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-09-25T14:51:48.815Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hiro&#39;s Blog">
-<meta name="twitter:description" content="求知若渴，虚心若愚">
-  <link rel="canonical" href="http://yoursite.com/archives/2019/09/">
+<meta name="twitter:title" content="矩阵求导规则总结">
+<meta name="twitter:description" content="最近在看机器学习的一些基础，看到数学推导的时候发现自己还是对基础的推到过程不是很了解。这一篇总结记录一下矩阵的求导运算的基础知识供以后自己查询。矩阵的求导（Matrix Derivative）也叫矩阵微分（Matrix Differential），在机器学习的一些基本推导中经常用到。在机器学习领域很多计算都是基于矩阵和向量来进行的，所以学习和矩阵相关的一些数学运算是很有必要的，有利于更好的理解数学">
+  <link rel="canonical" href="http://yoursite.com/2019/09/25/Matrix-Calculus/">
 
 
 <script id="page-configurations">
@@ -74,13 +75,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>归档 | Hiro's Blog</title>
+  <title>矩阵求导规则总结 | Hiro's Blog</title>
   
 
 
@@ -298,116 +299,130 @@
         <div class="content-wrap">
             
 
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-  
-
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        
-        
-        
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/25/Matrix-Calculus/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hiro">
+      <meta itemprop="description" content="求知若渴，虚心若愚">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hiro's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">矩阵求导规则总结
+
           
-        
-        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
-      </div>
-      
+        </h1>
 
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
 
-  
-  
+              
+                
+              
 
-  
+              <time title="创建时间：2019-09-25 21:58:36 / 修改时间：22:51:48" itemprop="dateCreated datePublished" datetime="2019-09-25T21:58:36+08:00">2019-09-25</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+
+        </div>
+      </header>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>最近在看机器学习的一些基础，看到数学推导的时候发现自己还是对基础的推到过程不是很了解。这一篇总结记录一下矩阵的求导运算的基础知识供以后自己查询。<br>矩阵的求导（Matrix Derivative）也叫矩阵微分（Matrix Differential），在机器学习的一些基本推导中经常用到。在机器学习领域很多计算都是基于矩阵和向量来进行的，所以学习和矩阵相关的一些数学运算是很有必要的，有利于更好的理解数学基础，可以加深对于机器学习模型的认识。Here we go!</p><a id="more"></a>
+<h1 id="布局约定-Layout-conventions"><a href="#布局约定-Layout-conventions" class="headerlink" title="布局约定(Layout conventions)"></a>布局约定(Layout conventions)</h1><h2 id="布局-Layout"><a href="#布局-Layout" class="headerlink" title="布局(Layout)"></a>布局(Layout)</h2><p>在矩阵求导中有两种布局，分别是分母布局(denominator layout)和分子布局(numerator layout)。这两种不同的布局的求导规则是不一样的。</p>
+<script type="math/tex; mode=display">y_1</script>
     </div>
-  
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+    
+    
+    
         
-          <a class="post-title-link" href="/2019/09/25/Matrix-Calculus/" itemprop="url">
-            <span itemprop="name">矩阵求导规则总结</span>
-          </a>
+      
+        <div id="reward-container">
+  <div>您的支持是对我最大的肯定</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
         
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-25T21:58:36+08:00"
-              content="2019-09-25">
-          09-25
-        </time>
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.jpg" alt="Hiro 微信支付">
+        <p>微信支付</p>
       </div>
 
-    </header>
-  </article>
+  </div>
+</div>
 
+      
 
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/Neural-Network/" rel="tag"><i class="fa fa-tag"></i> Neural Network</a>
+            
+              <a href="/tags/math/" rel="tag"><i class="fa fa-tag"></i> math</a>
+            
+          </div>
         
-          <a class="post-title-link" href="/2019/09/16/hello-world/" itemprop="url">
-            <span itemprop="name">第一篇博客</span>
-          </a>
+
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-16T17:31:37+08:00"
-              content="2019-09-16">
-          09-16
-        </time>
-      </div>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/09/16/hello-world/" rel="next" title="第一篇博客">
+                  <i class="fa fa-chevron-left"></i> 第一篇博客
+                </a>
+              
+            </div>
 
-    </header>
-  </article>
+            <span class="post-nav-divider"></span>
 
-
-
-
-    </div>
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
@@ -425,6 +440,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -437,6 +457,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#布局约定-Layout-conventions"><span class="nav-number">1.</span> <span class="nav-text">布局约定(Layout conventions)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#布局-Layout"><span class="nav-number">1.1.</span> <span class="nav-text">布局(Layout)</span></a></li></ol></li></ol></div>
+        
       </div>
       <!--/noindex-->
 

@@ -210,7 +210,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">2</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">4</span></a>
 
   </li>
       
@@ -254,7 +254,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">1</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">2</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -380,14 +380,14 @@
       
         <p>这篇博客主要用来记录markdown语法，并对各种markdown文档元素进行预览。</p><h1 id="一级标题：-文本"><a href="#一级标题：-文本" class="headerlink" title="一级标题：# 文本"></a>一级标题：# 文本</h1><a id="more"></a>
 <h2 id="二级标题：-文本"><a href="#二级标题：-文本" class="headerlink" title="二级标题： ## 文本"></a>二级标题： ## 文本</h2><h3 id="三级标题：-文本"><a href="#三级标题：-文本" class="headerlink" title="三级标题：### 文本"></a>三级标题：### 文本</h3><h4 id="四级标题：-文本"><a href="#四级标题：-文本" class="headerlink" title="四级标题：#### 文本"></a>四级标题：#### 文本</h4><h5 id="五级标题：-文本"><a href="#五级标题：-文本" class="headerlink" title="五级标题：##### 文本"></a>五级标题：##### 文本</h5><h6 id="六级标题：-文本"><a href="#六级标题：-文本" class="headerlink" title="六级标题：###### 文本"></a>六级标题：###### 文本</h6><p>正文长我这样，直接写文本就是正文</p>
-<p><em>想要斜体用一个*号括起来</em></p>
+<p><em>想要斜体用一个\</em>号括起来*</p>
 <p><strong>想要粗体用两个*号括起来</strong></p>
-<p><strong><em>想要斜体还想要粗体用三个*号括起来</em></strong></p>
+<p><strong><em>想要斜体还想要粗体用三个\</em>号括起来*</strong></p>
 <p><del>删除线用两个波浪号包起来</del></p>
 <blockquote>
-<p>第一级引用内容利用一个&gt;表示</p>
+<p>第一级引用内容利用一个>表示</p>
 <blockquote>
-<p>第二级引用就是两个&gt;,以此类推</p>
+<p>第二级引用就是两个>,以此类推</p>
 <blockquote>
 <blockquote>
 <blockquote>
@@ -409,15 +409,9 @@
 <p>六亲不认的分割线，用三个或者三个以上的-或者*都可以，但是三个-需要和文本隔开一行，我也不知道为什么。</p>
 <hr>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">This is a piece of code</span><br><span class="line">代码块要用连续的三个`包起来，还可以指定代码的语言</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>这是个html容器<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>这是个链接: <a href="https://baidu.com/" target="_blank" rel="noopener">baidu</a>，语法如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[baidu](https://baidu.com/)</span><br></pre></td></tr></table></figure>
-
-<p>图片：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 &apos;&apos;图片title&apos;&apos;)</span><br><span class="line"></span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</span><br></pre></td></tr></table></figure>
-
+<p>这是个链接: <a href="https://baidu.com/" target="_blank" rel="noopener">baidu</a>，语法如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[baidu](https://baidu.com/)</span><br></pre></td></tr></table></figure></p>
+<p>图片：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 &apos;&apos;图片title&apos;&apos;)</span><br><span class="line"></span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</span><br></pre></td></tr></table></figure></p>
 <p><img src="https://github.com/GreatHong/GreatHong.github.io/blob/hexo/source/images/example.jpg?raw=true" alt="我举个栗子" title="举个栗子"></p>
 <p>无序的列表可以用-+*任意一个作为开头，和内容之间要有空格：</p>
 <ul>
@@ -439,34 +433,36 @@
 <li>第三个</li>
 </ol>
 <p>嵌套的列表上级和下级之间用三个空格隔开</p>
-<p>表格的不同列用|分割，表头用-和表分开：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">姓名|技能|排行</span><br><span class="line">--|:--:|--:</span><br><span class="line">刘备|哭|大哥</span><br><span class="line">关羽|打|二哥</span><br><span class="line">张飞|骂|三弟</span><br></pre></td></tr></table></figure>
-
+<p>表格的不同列用|分割，表头用-和表分开：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">姓名|技能|排行</span><br><span class="line">--|:--:|--:</span><br><span class="line">刘备|哭|大哥</span><br><span class="line">关羽|打|二哥</span><br><span class="line">张飞|骂|三弟</span><br></pre></td></tr></table></figure></p>
 <p>效果：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
 <th>姓名</th>
-<th align="center">技能</th>
-<th align="right">排行</th>
+<th style="text-align:center">技能</th>
+<th style="text-align:right">排行</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>刘备</td>
-<td align="center">哭</td>
-<td align="right">大哥</td>
+<td style="text-align:center">哭</td>
+<td style="text-align:right">大哥</td>
 </tr>
 <tr>
 <td>关羽</td>
-<td align="center">打</td>
-<td align="right">二哥</td>
+<td style="text-align:center">打</td>
+<td style="text-align:right">二哥</td>
 </tr>
 <tr>
 <td>张飞</td>
-<td align="center">骂</td>
-<td align="right">三弟</td>
+<td style="text-align:center">骂</td>
+<td style="text-align:right">三弟</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 
     </div>
 
@@ -508,6 +504,22 @@
 
         
 
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/09/25/Matrix-Calculus/" rel="prev" title="矩阵求导规则总结">
+                  矩阵求导规则总结 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
       </footer>
     
   </div>
@@ -569,7 +581,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -595,7 +607,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -667,7 +679,7 @@
     <!-- 博客字数统计 -->
     <span class="site-pv">
       <i class="fa fa-pencil"></i>
-      博客全站共： <span class="post-count">501</span> 字
+      博客全站共： <span class="post-count">731</span> 字
     </span>
 </div>
 <!-- 新增访客统计代码 END-->
@@ -747,6 +759,58 @@ setInterval("createtime()",250);
 
 
 
+  
+
+  
+    
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
   
 
   
