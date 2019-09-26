@@ -1,9 +1,8 @@
 ---
 title: 矩阵求导规则总结
 date: 2019-09-25 21:58:36
-catagries:
-    - notebook
-       - Machine Learning 
+categories:
+    - Machine Learning 
 tags:
     - Neural Network
     - math
